@@ -1,0 +1,31 @@
+
+header{
+  display: flex;
+  flex-direction: row;
+}
+header>.item:first-of-type{
+  flex:1;
+}
+header>.item:nth-of-type(2){
+  flex:3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+}
+header>.item:last-of-type{
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+}
+header>.item:first-of-type>img{
+  height:48px;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
