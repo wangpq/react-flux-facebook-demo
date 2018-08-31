@@ -10,10 +10,10 @@ window+R 打开控制台，输入cmd
 npm install -g create-react-app  
 ```
 创建一个应用程序 
-create-react-app 项目名
+create-react-app react-flux-facebook-demo
 
 进入项目
-cd 项目名
+cd react-flux-facebook-demo
 
 运行
 ```bash
