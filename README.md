@@ -26,9 +26,10 @@ npm start | yarn start
 
 # 二、配置Less
 
-默认create-react-app创建的项目支持css，不支持less，sass，stylus等。
+create-react-app创建的项目默认支持css，不支持less，sass，stylus等。
+所以如果需用到less等，需要手动修改配置文件。
 
-先把配置文件暴露出来 因为create-react-app创建的配置文件是没有暴露的
+现在create-react-app创建的配置文件默认是没有显示的，所以我们要看到，还得先把配置文件暴露出来，使用下面命令：
 ```bash
 npm run eject 
 ```
