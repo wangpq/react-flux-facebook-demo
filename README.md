@@ -24,7 +24,7 @@ npm start | yarn start
 看下你的页面,是不是出来啦
 
 
-# 二、配置Less
+# 二、让项目支持Less
 
 create-react-app创建的项目默认支持css，不支持less，sass，stylus等。
 所以如果需用到less等，需要手动修改配置文件。
@@ -101,12 +101,12 @@ header{
 ```
 
 
-# 三、打包CSS分离
+# 三、让项目CSS分离打包
 
 注意：这个功能在目前的create-react-app创建的项目的配置文件webpack.config.dev.js中没有设置，但是webpack.config.prod.js中是已经配置好了的，所以这一步没必要在设置啦。
 
 
-# 四、配置饿了么组件 
+# 四、项目使用饿了么组件 
 
 element-react官网
 https://elemefe.github.io/element-react/#/zh-CN/
@@ -125,8 +125,14 @@ import 'element-theme-default';
 
 ReactDOM.render(<Button type="primary">Hello</Button>, document.getElementById('app'));
 
+# 五、flux管理项目状态
 
-# 五、配置router
+安装flux
+```bash
+npm install flux --save
+```
+
+# 六、项目路由
 
 安装react-router-dom 
 ```bash
