@@ -19,7 +19,9 @@ cd 项目名
 ```bash
 npm start | yarn start  
 ```
-会自动打开http://localhost:3000/看下你的页面
+会自动打开http://localhost:3000/
+
+看下你的页面,是不是出来啦
 
 
 # 二、配置Less
