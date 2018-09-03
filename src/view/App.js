@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 
 //import { Router, Route, Link } from 'react-router'
 import Home from "./Home";
-import About from "./About";
+import Topics from "./Topics";
+import Detail from './Detail';
 
 import {
   BrowserRouter,
@@ -17,7 +18,8 @@ class App extends Component {
       <BrowserRouter> 
         <div>
           <Route exact  path="/" component={Home}/>
-          <Route path="/about" component={About}/>
+          <Route path="/topics" component={Topics}/>
+          <Route path="/detail/:id?" exact component={Detail} />
         </div>
       </BrowserRouter>
     );

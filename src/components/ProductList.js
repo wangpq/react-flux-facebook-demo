@@ -35,15 +35,23 @@ export default class ProductList extends Component{
 
   componentDidMount() {
     AppStore.addChangeListener(this.onProductChange);
+    AppStore.addChangeListener(this.autoGetPrdLength.bind(this));
   }
 
   componentWillUnmountn() {
     AppStore.removeChangeListener(this.onProductChange);
+    AppStore.removeChangeListener(this.autoGetPrdLength.bind(this));
   }
 
   onProductChange() {
     this.setState({
       items: AppStore.getAll()
+    });
+  }
+
+  autoGetPrdLength() {
+    this.setState({
+      prdLength: AppStore.getProductListLength()
     });
   }
 
@@ -54,7 +62,8 @@ export default class ProductList extends Component{
   }
 
   render() {
-    return <div style={{"height":"250px",overflow:"auto",margin:"18px 12px"}}>
+    return <div style={{"height":"250px",overflow:"auto",margin:"60px 12px 18px"}}>
+      <h2>总共{this.state.prdLength}条数据</h2>
       <Table
         style={{width: '100%'}}
         columns={this.state.columns}
