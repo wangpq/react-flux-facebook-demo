@@ -69,35 +69,15 @@ test: /\.css$/ 的 use 数组配置增加 less-loader
 
 然后把src 里面的App.css 文件改成App.less文件 里面使用less写测试下效果
 ```bash
+body{
+  background-color: #f0f0f0;
+}
 header{                                                                                       
   display: flex;
   flex-direction: row;
   background-color: rgba(155,155,155,0.1);
-  .item:not(:first-of-type){
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:center;
-  }
-  .item:first-of-type{
-    flex:1;
-    img{
-      height:48px;
-      animation: App-logo-spin infinite 20s linear; 
-    }
-  }
-  .item:nth-of-type(2){
-    flex:3;
-  }
-  .item:last-of-type{
-    flex:1;
-  }
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 ```
 
 
