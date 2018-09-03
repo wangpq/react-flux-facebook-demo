@@ -1,11 +1,13 @@
 {
-  "name": "react-mobx-demo",
+  "name": "react-flux-facebook-demo",
   "version": "0.1.0",
   "private": true,
+  "author":"wangpq",
   "keywords": [
     "Flux",
     "React",
-    "react-flux"
+    "react-flux",
+    "react-flux-demo"
   ],
   "dependencies": {
     "autoprefixer": "7.1.6",
